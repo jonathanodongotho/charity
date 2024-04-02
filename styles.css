@@ -4,11 +4,12 @@
     margin: 0;
 }
 nav{
-    background: rgb(0, 0, 92);
+    background: transparent;
     color: white;
-    position: fixed;
+    position: ;
     width: 100%;
     z-index: 1000;
+    top: 0;
 }
 nav .menu a{
     padding: 2rem 0.7rem;
@@ -23,121 +24,83 @@ nav .search:hover{
     transform: scale(1.05);
 }
 .hero{
-    height: 85vh;
+    height: 100vh;
+    margin-top: ;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('images/image2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.hero .carousel{
-    height: 100%;
+.her{
+    height: calc(100vh - 88px);
 }
-.hero .carousel-inner{
-    height: 100%;
+.hero h1{
+    font-weight: 800;
+    font-size: 4.5rem;
+    color: rgb(238, 238, 238);
 }
-.hero .carousel-item{
-    width: 100%;
-}
-.hero img{
-    height: 100%;
-    width: 100% ;
-    object-fit: contain ;
-}
-.hero .carousel-indicators{
-    margin: ;
-    justify-content: end;
-    float: right;
-}
-.hero .carousel-indicators button {
-    height: 6px;
-    border: 1px solid black;
-    border-radius: 5rem;
-    width: 30px;
-}
-.hero .carousel-indicators button.active {
-    width: 6 0px;
+.hero h5{
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: rgb(170, 170, 170);
+    padding-top: 1.5rem;
 }
 .after-hero{
-height: 10rem;
+    padding: 6rem 0;
 }
-.after-hero h5{
-    font-size: 2rem;
-    font-weight: 800;
-}
-.after-hero a{
-    font-size: 1.2rem;
+.after-hero h3{
     font-weight: 700;
+    font-size: 4rem;
 }
-.after-hero div{
-    z-index: 10;
+.after-hero h6{
+    font-weight: 700;
+    font-size: 1.5rem;
 }
-.after-hero select{
-    background: none;
-    color: white;
-}
-.after-hero select option{
-    background: none;
-    color: rgb(61, 61, 61);
+.after-hero .img-container{
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 .after-hero img{
-    background: rgba(216, 4, 4, 0.747);
-    height: 10rem;
+    max-height: 15rem;
+    max-width: 15rem;
+    border-radius: 50%;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.contact-form{
+    padding: 6rem 0;
+    background: rgb(146, 146, 146);
+}
+.contact-form img{
+    height: 20rem;
     width: 100%;
-    position: absolute;
-    left: 0;
-    object-fit: cover;
 }
-.categories{
-    padding: 4rem 3.5rem;
-}
-.projects{}
-.projects h5{
-    font-weight: 800;
-    font-size: 2rem;
-    color: rgb(45, 0, 129);
-}
-.proj-item{
-    max-width: 13rem;
-    padding: 1rem;
-    z-index: 10;
-    background: white;
-    margin: 2rem 0;
-    border-radius: 1rem;
-}
-.proj-item img{
-    width: 100%;
-    border-radius: 1rem;
-}
-.proj-item .btn{
-    border-top-left-radius: 0;
-    border-top-right-radius: 0;
-    border-bottom-left-radius: 1rem;
-    border-bottom-right-radius: 1rem;
-}
-.proj-item-container{
-    padding: 2rem 0;
-}
-.proj-item-container>img{
-    background: rgb(0, 174, 218);
-    height: 60%;
-    width: 100%;
-    position: absolute;
-    left: 0;
-    object-fit: cover;
-}
-.discover h5{
-    font-weight: 800;
-    font-size: 2rem;
-    color: rgb(45, 0, 129);
-}
-.discover .proj-item{
-    border: 1px solid rgb(172, 172, 172);
-    margin-right: 1rem;
-}
-
-.news h5{
-    font-size: 2rem;
+.contact-form h3{
     font-weight: 700;
-    color: rgb(3, 130, 241);
+    font-size: 4rem;
+}
+.contact-form i{
+    font-size: 1.5rem;
+}
+.contact-sec{
+    padding: 6rem;
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('images/image2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(189, 186, 186);
+
+}
+.news{
+    padding: 5rem 0;
+}
+.news h3{
+    font-size: 4rem;
+    font-weight: 700;
+    color: rgb(44, 44, 44);
 }
 a.news-item{
-    max-width: 18rem;
+    max-width: 13rem;
     height: 18rem;
     display: inline-block
 }
@@ -180,10 +143,10 @@ a.news-item div p{
     padding: 4rem 0;
 }
 .vol h5{
-    font-size: 2.2rem;
-    padding: 3rem 0;
+    font-size: 4rem;
+    padding: ;
     font-weight: 700;
-    color: rgb(255, 86, 86);
+    color: rgb(51, 51, 51);
 }
 .vol .vol-1{
     background: linear-gradient(rgba(0, 0, 105, 0.8), rgba(0, 0, 105, 0.8)), url('images/vol1.jpeg');
@@ -204,7 +167,7 @@ a.news-item div p{
 }
 
 .support{
-    padding: 3rem 0;
+    padding-top: 6rem;
 }
 .support h5{
     font-size: 2rem;
@@ -228,40 +191,9 @@ a.news-item div p{
     color: rgb(0, 0, 90);
     font-weight: 700;
 }
-.blog{
-    padding: 2rem 0;
-    margin-right: 6rem;
-    border-top-right-radius: 2.5rem;
-    border-bottom-right-radius: 2.5rem;
-}
-.blog h6{
-    font-size: 3.5rem;
-    font-weight: 700;
-    color: white;
-}
-.blog ul{
-    font-size: 1.5rem;
-    font-weight: 700;
-    color: white;
-}
-.blog-right img{
-    width: 100%;
-    height: auto;
-}
-.blog .im1{
-    position: absolute;
-    left: ;
-    margin: -5rem 0 0 30rem;
-}
-.blog .im2{
-    position: absolute;
-    right: ;
-    bottom: ;
-    margin: -30rem 15rem 15rem 0;
-}
 .newsletter{
     padding: 5rem 0;
-    background: rgb(0, 140, 255);
+    background: rgb(97, 97, 97);
 }
 .newsletter h6{
     padding-bottom: 3rem;
@@ -272,9 +204,12 @@ a.news-item div p{
 .newsletter input{
     padding: 1rem 2rem;
 }
+.well{
+    padding: 4rem 0;
+}
 footer{
-    background: rgb(0, 0, 92);
-    color: white;
+    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url('images/image2.jpg');;
+    color: rgb(194, 194, 194);
 }
 footer h5{
     color: rgb(0, 174, 255);
