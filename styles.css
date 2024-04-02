@@ -3,255 +3,285 @@
     padding: 0;
     margin: 0;
 }
-h6{
-    font-weight: 700;
+nav{
+    background: rgb(0, 0, 92);
+    color: white;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
 }
-h5{
-    font-weight: 800;
+nav .menu a{
+    padding: 2rem 0.7rem;
+}
+nav .menu a:hover{
+    background: rgb(0, 153, 255);
+}
+nav .search{
+    transition: 0.15s ease-in-out;
+}
+nav .search:hover{
+    transform: scale(1.05);
 }
 .hero{
-    background: linear-gradient(rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0.726)), url('images/image2.jpg');
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    height: 85vh;
 }
-nav .nav-link{
-    font-weight: 600;
-    color: rgb(255, 249, 214);
+.hero .carousel{
+    height: 100%;
 }
-nav .bars{
-    color: rgb(255, 249, 214);
-    font-size: 1.5rem;
+.hero .carousel-inner{
+    height: 100%;
 }
-nav .nav-link.active{
-    font-weight: 600;
-    color: rgb(255, 249, 214);
-    border-bottom: solid 3px rgb(255, 249, 214);
-}
-nav small{
-    font-size: 0.6rem;
-}
-
-.intro{
-    color: rgb(250, 250, 250);
-    padding: 10rem 0;
-}
-.intro h1{
-    color: rgb(238, 238, 238);
-    font-weight: 800;
-    font-size: 5rem;
-    font-family: sans-serif;
-}
-.intro h5{
-    color: rgb(180, 180, 180);
-    font-weight: 700;
-    font-size: 1.5rem;
-}
-.intro .btn{
-    font-weight: 600;
-}
-.intro .carousel img{
+.hero .carousel-item{
     width: 100%;
-    max-height: 63vh;
-    object-fit: contain;
 }
-.intro .carousel .carousel-indicators button{
-    border: 1px black solid;
+.hero img{
+    height: 100%;
+    width: 100% ;
+    object-fit: contain ;
+}
+.hero .carousel-indicators{
+    margin: ;
+    justify-content: end;
+    float: right;
+}
+.hero .carousel-indicators button {
+    height: 6px;
+    border: 1px solid black;
     border-radius: 5rem;
-    height: 0.65rem !important;
-    width: 0.65rem !important;
+    width: 30px;
 }
-.intro .carousel .carousel-indicators button.active{
-    border-radius: 5rem;
-    width: 1.5rem !important;
+.hero .carousel-indicators button.active {
+    width: 6 0px;
 }
-.why-us{
-    margin-top: -7rem;
+.after-hero{
+height: 10rem;
 }
-.why-us .why-item{
-    background: rgb(255, 255, 255);
-    padding: 1.8rem;
+.after-hero h5{
+    font-size: 2rem;
+    font-weight: 800;
+}
+.after-hero a{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.after-hero div{
+    z-index: 10;
+}
+.after-hero select{
+    background: none;
+    color: white;
+}
+.after-hero select option{
+    background: none;
+    color: rgb(61, 61, 61);
+}
+.after-hero img{
+    background: rgba(216, 4, 4, 0.747);
+    height: 10rem;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    object-fit: cover;
+}
+.categories{
+    padding: 4rem 3.5rem;
+}
+.projects{}
+.projects h5{
+    font-weight: 800;
+    font-size: 2rem;
+    color: rgb(45, 0, 129);
+}
+.proj-item{
+    max-width: 13rem;
+    padding: 1rem;
+    z-index: 10;
+    background: white;
+    margin: 2rem 0;
     border-radius: 1rem;
 }
-.why-us i{
-    font-size: 3rem;
-}
-.category h5{
-    font-weight: 650;
-}
-.category .cat-heading span{
-    font-weight: 600;
-    color: rgb(53, 53, 53);
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-}
-.category span.active{
-    border-bottom: 3px solid rgb(70, 70, 70);
-}
-.category .cat-container{
-    padding: 4rem 0 1rem 0;
-}
-.category .cat-container img{
+.proj-item img{
     width: 100%;
-    height: 50vh;
+    border-radius: 1rem;
 }
-.category .cat-item{
-    width: 47%;
-    background: white;
+.proj-item .btn{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
 }
-.category .pag .active{
-    border-bottom: 2.5px solid rgb(56, 56, 56);
+.proj-item-container{
+    padding: 2rem 0;
 }
-.groups{
-    width: ;
+.proj-item-container>img{
+    background: rgb(0, 174, 218);
+    height: 60%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    object-fit: cover;
 }
-.groups a{
-    background: linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.548)),url('images/chair2.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.discover h5{
+    font-weight: 800;
+    font-size: 2rem;
+    color: rgb(45, 0, 129);
+}
+.discover .proj-item{
+    border: 1px solid rgb(172, 172, 172);
+    margin-right: 1rem;
+}
+
+.news h5{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(3, 130, 241);
+}
+a.news-item{
+    max-width: 18rem;
+    height: 18rem;
+    display: inline-block
+}
+.news-item img{
+    max-width: 18rem;
+    height: 18rem;
+    object-fit: ;
+    position: absolute;
+    left: ;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+a.news-item div{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    width: 30%;
-    font-weight: 650;
-    height: 40vh;
+    justify-content: center;
+    position: relative;
+    z-index: 100;
+    height: 18rem;
 }
-.discount-container{
-    padding: 6rem 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.726), rgba(0, 0, 0, 0.726)), url('images/image2.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
+.news-item div{
+    width: 100%;
+    padding: 0 0.5rem;
 }
-.discount{
-    background: white;
+a.news-item div h6{
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+a.news-item div p{
+    color: white;
+    font-weight: 600;
+}
+.news-container{
     padding: 3rem 0;
 }
 
-.discount a{
-    background: rgb(153, 0, 0);
-    color: white;
-    font-weight: 600;
-    padding: 0.3rem 1.5rem;
+.vol{
+    padding: 4rem 0;
 }
-.discount h6{
-    color: red;
+.vol h5{
+    font-size: 2.2rem;
+    padding: 3rem 0;
+    font-weight: 700;
+    color: rgb(255, 86, 86);
 }
-.discount a:hover{
-    background: rgb(255, 255, 255);
-    outline: 2px solid rgb(153, 0, 0);
-    color: rgb(153, 0, 0);
+.vol .vol-1{
+    background: linear-gradient(rgba(0, 0, 105, 0.8), rgba(0, 0, 105, 0.8)), url('images/vol1.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.gallery{
-
-}
-.gallery img{
-    width: 15rem;
-    height: 15rem;
+.vol .vol-2 img{
     object-fit: contain;
+    height: 100%;
+    width: 100%;
 }
-footer .section2 p{
-    font-weight: 600;
+.well-right img{
+    height: 25rem;
+    width: 25rem;
+}
+.well h6{
+    font-size: 2.5rem;
 }
 
-@media screen and (max-width: 1024px) {
-    .why-us .why-item{
-        padding: 1.4rem;
-        margin: 0rem 1.5rem;
-    }
-    .category .cat-container img{
-        height: 35vh;
-    }
-    .gallery img{
-        width: 13rem;
-        height: 13rem;
-    }
-    .groups a{
-        margin-right: 1rem;
-    }
+.support{
+    padding: 3rem 0;
 }
-@media screen and (max-width: 768px) {
-    .intro h1 {
-        font-size: 4.4rem;
-    }
-    .intro h5 {
-        font-size: 1rem;
-    }
-    .why-us .why-item{
-        padding: 1rem;
-        margin: 0rem 1.2rem;
-    }
-    .category .cat-container img {
-        height: 100%;
-    }
-    .groups a{
-        width: 30%;
-        height: 40vh;
-    }
+.support h5{
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(0, 153, 255);
+    padding: 3rem 0
 }
-@media screen and (max-width: 425px) {
-    .intro h1 {
-        font-size: 3.8rem;
-    }
-    .why-us{
-        margin-top: -7rem;
-    }
-    .why-us .why-item{
-        padding: 0.5rem;
-        border-radius: 0.8rem;
-    }
-    .why-us i{
-        font-size: 1.5rem;
-    }
-    .category .cat-heading{
-        flex-wrap: wrap;
-    }
-    .category .cat-heading span{
-        font-weight: 600;
-        color: rgb(53, 53, 53);
-        padding: 0.5rem 0.2rem;
-    }
-    .category .cat-container{
-        padding: 2rem 0 1rem 0;
-        width: ;
-    }
-    .category .cat-container img{
-        width: 100%;
-        height: 14rem;
-    }
-    .category .cat-item{
-        width: 47%;
-        background: white;
-    }
-    .groups a{
-        width: 45%;
-        height: 40vh;
-    }
-    .gallery img{
-        width: 10rem;
-        height: 10rem;
-    }
+.support-item{
+    background: ;
+    width: 18rem;
+    padding: 0 3rem;
+
 }
-@media screen and (max-width: 375px) {
-    .category .cat-container img{
-        max-height: 12rem;
-    }
+.support-item h6{
+    color: rgb(0, 0, 90);
+    font-size: 1.5rem;
+    font-weight: 700;
+
 }
-@media screen and (max-width: 320px) {
-    .intro h1 {
-        font-size: 3.5rem;
-    }
-    .category .cat-container img{
-        max-height: 10rem;
-    }
-    .groups a{
-        width: 45%;
-        height: 30vh;
-        margin-right: 0.5rem;
-    }
-    .gallery img{
-        width: 7.8rem;
-        height: 7.8rem;
-    }
+.support-item p{
+    color: rgb(0, 0, 90);
+    font-weight: 700;
+}
+.blog{
+    padding: 2rem 0;
+    margin-right: 6rem;
+    border-top-right-radius: 2.5rem;
+    border-bottom-right-radius: 2.5rem;
+}
+.blog h6{
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: white;
+}
+.blog ul{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: white;
+}
+.blog-right img{
+    width: 100%;
+    height: auto;
+}
+.blog .im1{
+    position: absolute;
+    left: ;
+    margin: -5rem 0 0 30rem;
+}
+.blog .im2{
+    position: absolute;
+    right: ;
+    bottom: ;
+    margin: -30rem 15rem 15rem 0;
+}
+.newsletter{
+    padding: 5rem 0;
+    background: rgb(0, 140, 255);
+}
+.newsletter h6{
+    padding-bottom: 3rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: white;
+}
+.newsletter input{
+    padding: 1rem 2rem;
+}
+footer{
+    background: rgb(0, 0, 92);
+    color: white;
+}
+footer h5{
+    color: rgb(0, 174, 255);
+}
+footer i{
+    color: white;
+    font-size: 1.5rem;
+    background: rgb(0, 174, 255);
+    border-radius: 5rem;
 }
