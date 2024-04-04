@@ -4,18 +4,24 @@
     margin: 0;
 }
 nav{
-    background: transparent;
+    background: rgba(255, 255, 255, 0.068);
     color: white;
     position: ;
     width: 100%;
     z-index: 1000;
     top: 0;
+    padding: 0.5rem;
 }
 nav .menu a{
     padding: 2rem 0.7rem;
+    transition: all 0.18s ease-in-out;
 }
 nav .menu a:hover{
+    outline: solid 3px rgb(0, 153, 255);
+}
+nav .menu a.active{
     background: rgb(0, 153, 255);
+    outline: solid 3px rgb(0, 153, 255);
 }
 nav .search{
     transition: 0.15s ease-in-out;
@@ -23,12 +29,57 @@ nav .search{
 nav .search:hover{
     transform: scale(1.05);
 }
+.login-modal i{
+    font-size: 6rem;
+    
+}
 .hero{
     height: 100vh;
     margin-top: ;
     background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('images/image2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+}
+.hero.contact{
+    height: 50vh;
+}
+.hero.contact h1{
+    font-size: 3rem;
+}
+.hero.contact h5{
+    font-size: 1.2rem;
+}
+.hero.contact .her{
+    height: calc(50vh - 88px);
+}
+.hero.gall{
+    height: 50vh;
+}
+.hero.gall .her{
+    height: calc(50vh - 88px);
+}
+.hero.about{
+    height: 60vh;
+}
+.hero.about h1{
+    font-size: 3.4rem;
+}
+.hero.about .her{
+    height: calc(60vh - 88px);
+}
+.gall-pics{
+    padding: 5rem 0;
+}
+.gall-pics h3{
+    padding: 3rem;
+    font-size: 4rem;
+    font-weight: 700;
+}
+.gall-pics img{
+    max-width: 30%;
+    height: 16rem;
+    margin-right: 1.5rem;
+    margin-bottom: 1.5rem;
 }
 .her{
     height: calc(100vh - 88px);
@@ -219,4 +270,22 @@ footer i{
     font-size: 1.5rem;
     background: rgb(0, 174, 255);
     border-radius: 5rem;
+}
+
+
+.acts-pics{
+    padding: 5rem 0;
+}
+.acts-pics h3{
+    font-size: 4rem;
+    font-weight: 700;
+    padding: 3rem 0;
+}
+.acts-pics img{
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+}
+.acts-pics .act-item{
+    padding: 2.5rem 0;
 }
