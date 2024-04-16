@@ -63,7 +63,7 @@ nav .search:hover{
 .hero{
     height: 100vh;
     margin-top: ;
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/image2.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('images/image2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -163,7 +163,7 @@ nav .search:hover{
 }
 .contact-sec{
     padding: 6rem;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('images/image2.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('images/image2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     color: rgb(189, 186, 186);
@@ -294,7 +294,7 @@ a.news-item div p{
     padding: 4rem 0;
 }
 footer{
-    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/image2.jpg');;
+    background: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), url('images/image2.jpg');;
     color: rgb(194, 194, 194);
 }
 footer h5{
@@ -440,7 +440,7 @@ footer i{
         background: rgb(146, 146, 146);
     }
     .contact-form img{
-        height: 17rem;
+        height: 20rem;
         width: 100%;
     }
     .contact-form h3{
@@ -547,7 +547,7 @@ footer i{
         font-size: 2.3rem;
     }
     .contact-form img {
-        height: 15rem;
+        height: 18rem;
         width: 90%;
 
     }
@@ -587,7 +587,7 @@ footer i{
     }
     .contact-form img{
         padding-top: 3rem;
-        height: 17rem;
+        height: 20rem;
     }
     .vol {
         padding: 1.5rem 0;
@@ -717,7 +717,7 @@ footer i{
         font-size: 2rem;
     }
     .contact-form img {
-        height: 15rem;
+        height: 18rem;
         width: 100%;
     }
     .contact-form .text-cont{
