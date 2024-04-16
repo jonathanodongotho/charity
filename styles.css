@@ -12,6 +12,12 @@ nav{
     top: 0;
     padding: 0.5rem;
 }
+nav .nav-btn2{
+    display: initial;
+}
+nav button{
+    border: none !important;
+}
 nav .menu a{
     padding: 2rem 0.7rem;
     transition: all 0.18s ease-in-out;
@@ -29,6 +35,27 @@ nav .search{
 nav .search:hover{
     transform: scale(1.05);
 }
+.nav-btn3{
+    display: initial;
+}
+.nav-btn4{
+    display: none;
+}
+.btn.search{
+    margin-right: 0.9rem;
+}
+.bars{
+
+}
+.bars button{
+    background: none;
+    border: none !important;
+    padding: 0.2rem 0.5rem;
+}
+.bars button i{
+    font-size: 1.5rem;
+    color: rgb(233, 232, 232);
+}
 .login-modal i{
     font-size: 6rem;
     
@@ -41,7 +68,7 @@ nav .search:hover{
     background-size: cover;
 }
 .hero.contact{
-    height: 50vh;
+    height: 60vh;
 }
 .hero.contact h1{
     font-size: 3rem;
@@ -53,10 +80,10 @@ nav .search:hover{
     height: calc(50vh - 88px);
 }
 .hero.gall{
-    height: 50vh;
+    height: 60vh;
 }
 .hero.gall .her{
-    height: calc(50vh - 88px);
+    height: calc(60vh - 88px);
 }
 .hero.about{
     height: 60vh;
@@ -76,7 +103,7 @@ nav .search:hover{
     font-weight: 700;
 }
 .gall-pics img{
-    max-width: 30%;
+    max-width: 40%;
     height: 16rem;
     margin-right: 1.5rem;
     margin-bottom: 1.5rem;
@@ -151,12 +178,15 @@ nav .search:hover{
     color: rgb(44, 44, 44);
 }
 a.news-item{
-    max-width: 13rem;
+    width: 30%;
     height: 18rem;
-    display: inline-block
+    margin: 1rem;
+    display: inline-block;
+    border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem;
 }
 .news-item img{
-    max-width: 18rem;
+    width: ;
     height: 18rem;
     object-fit: ;
     position: absolute;
@@ -189,7 +219,6 @@ a.news-item div p{
 .news-container{
     padding: 3rem 0;
 }
-
 .vol{
     padding: 4rem 0;
 }
@@ -205,7 +234,7 @@ a.news-item div p{
     background-size: cover;
 }
 .vol .vol-2 img{
-    object-fit: contain;
+    object-fit: cover;
     height: 100%;
     width: 100%;
 }
@@ -227,10 +256,16 @@ a.news-item div p{
     padding: 3rem 0
 }
 .support-item{
-    background: ;
-    width: 18rem;
-    padding: 0 3rem;
+    width: 23%;
+    border: 2px solid rgb(167, 167, 167);
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: 1.7rem 2rem;
+    border-radius: 2rem;
 
+}
+.support-item p{
+    margin: 0;
 }
 .support-item h6{
     color: rgb(0, 0, 90);
@@ -271,8 +306,6 @@ footer i{
     background: rgb(0, 174, 255);
     border-radius: 5rem;
 }
-
-
 .acts-pics{
     padding: 5rem 0;
 }
@@ -288,4 +321,424 @@ footer i{
 }
 .acts-pics .act-item{
     padding: 2.5rem 0;
+}
+.nav-medium{
+    display: none;
+}
+.nav-small{
+    display: none;
+}
+
+
+@media screen and (max-width: 1024px) {
+    nav .menu a{
+        padding: 2rem 0.4rem;
+        transition: all 0.18s ease-in-out;
+    }
+    .acts-pics h3 {
+        font-size: 3.5rem;
+    }
+    .support-item{
+        width: 30%;
+        padding: ;
+    
+    }
+    .gall-pics h3{
+        padding: 3rem;
+        font-size: 3.4rem;
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .nav-medium{
+        display: initial;
+        background: white;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: 2rem 0;
+        translate: -100vw 0;
+    }
+    .nav-medium.active{
+        translate: 0;
+    }
+    .nav-medium ul{
+        list-style: none;
+    }
+    .nav-medium li{
+        margin-bottom: 0.5rem;
+        background: rgb(231, 231, 231);
+        display: flex;
+        justify-content: center;
+    }
+    .nav-medium li a{
+        text-decoration: none;
+        display: block;
+        padding: 0.5rem 0;
+        color: rgb(77, 77, 77);
+        font-weight: 600;
+    }
+    .nav-medium li:hover{
+        background: rgb(184, 184, 184);
+    }
+    .nav-medium i{
+        color: black;
+        padding: 0.8rem 0;
+        cursor: pointer;
+    }
+}
+@media screen and (max-width: 768px) {
+    .hero h1{
+        font-size: 3rem;
+    }
+    .hero h5{
+        font-size: 1.2rem;
+    }
+    .hero.about h1{
+        font-size: 2.5rem;
+    }
+    .hero.contact h1{
+        font-size: 2.4rem;
+    }
+    .acts-pics h3 {
+        font-size: 2.6rem;
+    }
+    .support{
+        padding: 4rem 0;
+    }
+    .support-item{
+        width: 25%;
+        padding: 1.4rem 1.7rem;
+    
+    }
+    .after-hero h3{
+        font-weight: 700;
+        font-size: 3rem;
+    }
+    .after-hero h6{
+        font-weight: 700;
+        font-size: 1.2rem;
+    }
+    .after-hero{
+        padding: 1.8rem 0;
+    }
+    .after-hero img{
+        max-height: 12rem;
+        max-width: 12rem;
+        margin-right: 1.2rem;
+        margin-bottom: 1.2rem;
+    }
+
+    .gall-pics h3{
+        padding: 3rem;
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+    .contact-form{
+        padding: 4rem 0;
+        background: rgb(146, 146, 146);
+    }
+    .contact-form img{
+        height: 17rem;
+        width: 100%;
+    }
+    .contact-form h3{
+        font-weight: 700;
+        font-size: 2.8rem;
+    }
+    .contact-form i{
+        font-size: 1.2rem;
+    }
+    .contact-sec{
+        padding: 4rem;
+    }
+    .news h3{
+        font-size: 3rem;
+        font-weight: 700;
+        color: rgb(44, 44, 44);
+    }
+    a.news-item div h6{
+        color: white;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+    .vol{
+        padding: 3rem 0;
+    }
+    .well{
+        padding: 3rem 0;
+    }
+    .well h6{
+        font-size: 1.8rem;
+    }
+    .newsletter{
+        padding: 4rem 0;
+    }
+    .newsletter h6{
+        padding-bottom: 3rem;
+        font-size: 3rem;
+        font-weight: 700;
+        color: white;
+    }
+
+}
+
+@media screen and (max-width:658px) {
+    nav .nav-btn2{
+        display: none;
+    }
+    
+}
+
+@media screen and (max-width:425px) {
+    
+    .hero h1{
+        font-size: 2.5rem;
+    }
+    .hero h5{
+        font-size: 1.1rem;
+    }
+    .hero.about h1{
+        font-size: 2.3rem;
+    }
+    .hero.contact h1{
+        font-size: 2rem;
+    }
+    .gall-pics img{
+        max-width: 40%;
+        height: 13rem;
+    }
+    .gall-pics h3{
+        padding: 3rem;
+        font-size: 2.2rem;
+        font-weight: 700;
+    }
+    .support{
+        padding: 3rem 0;
+    }
+    .support-item{
+        width: 45%;
+        padding: 1rem 1.7rem;
+        margin: 0.5rem 0;
+    }
+    .support-item img{
+        width: 3rem;
+    }
+    .after-hero {
+        padding: 1.3rem 0;
+    }
+    .after-hero h3{
+        font-weight: 700;
+        font-size: 2.5rem;
+    }
+    .after-hero h6{
+        font-weight: 700;
+        font-size: 1.1rem;
+    }
+    .after-hero img {
+        max-height: 9rem;
+        max-width: 9rem;
+        margin-right: 1rem;
+        margin-bottom: 1rem;
+    }
+    .contact-form h3 {
+        font-weight: 700;
+        font-size: 2.3rem;
+    }
+    .contact-form img {
+        height: 15rem;
+        width: 90%;
+
+    }
+    .news h3 {
+        font-size: 2.5rem;
+    }
+    .acts-pics h3 {
+        font-size: 2.4rem;
+        padding: 0;
+    }
+    a.news-item {
+        width: 45%;
+        height: 15rem;
+        margin: 1rem 0.2rem;
+    }
+    a.news-item div h6{
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+    a.news-item div p{
+        color: white;
+        font-size: 0.8rem;
+        font-weight: ;
+    }
+    .contact-form>div{
+        flex-direction: column;
+        
+
+    }
+    .contact-form .text-cont{
+        padding: 0 2rem;
+    }
+    .contact-form .image{
+        display: flex;
+        justify-content: center;
+    }
+    .contact-form img{
+        padding-top: 3rem;
+        height: 17rem;
+    }
+    .vol {
+        padding: 1.5rem 0;
+    }
+    .vol h5 {
+        font-size: 2.5rem;
+    }
+    .well{
+        padding: 1rem;
+    }
+    .well h6 {
+        font-size: 1.3rem;
+    }
+    .newsletter h6 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: white;
+    }
+    .input-container{
+        width: ;
+    }
+    .nav-medium{
+        display: none;
+    }
+    .nav-small{
+        display: initial;
+        background: white;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        padding: 2rem 0;
+        translate: -100vw 0;
+    }
+    .nav-small.active{
+        translate: 0;
+    }
+    .nav-small ul{
+        list-style: none;
+    }
+    .nav-small li{
+        margin-bottom: 0.5rem;
+        background: rgb(231, 231, 231);
+        display: flex;
+        justify-content: center;
+    }
+    .nav-small li a{
+        text-decoration: none;
+        display: block;
+        padding: 0.5rem 0;
+        color: rgb(77, 77, 77);
+        font-weight: 600;
+    }
+    .nav-small li:hover{
+        background: rgb(184, 184, 184);
+    }
+    .nav-small i{
+        color: black;
+        padding: 0.8rem 0;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width: 355px){
+    .nav-btn3{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .btn.search{
+        margin-right: 0.4rem;
+    }
+    .hero h1 {
+        font-size: 2.3rem;
+    }
+    .hero.about h1{
+        font-size: 2.1rem;
+    }
+    .after-hero h3 {
+        font-size: 2.3rem;
+    }
+    .contact-form h3 {
+        font-size: 2rem;
+    }
+    .news h3 {
+        font-size: 2.3rem;
+    }
+    .acts-pics h3 {
+        font-size: 2.2rem;
+    }
+    .gall-pics img{
+        max-width: 40%;
+        height: 11rem;
+    }
+    a.news-item {
+        width: 70%;
+        height: 15rem;
+        margin: 1rem 0;
+    }
+    .news {
+        padding: 3rem 0;
+    }
+    .vol h5 {
+        font-size: 2.3rem;
+    }
+    .newsletter h6 {
+        font-size: 2.3rem;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .hero.about h1{
+        font-size: 2rem;
+    }
+    .after-hero img {
+        max-height: 7rem;
+        max-width: 7rem;
+    }
+    .support {
+        padding: 1rem 0;
+    }
+    .after-hero .img-container {
+        padding: 2rem 0;
+    }
+    .acts-pics h3 {
+        font-size: 2rem;
+    }
+    .contact-form img {
+        height: 15rem;
+        width: 100%;
+    }
+    .contact-form .text-cont{
+        padding-bottom: 2rem;
+
+    }
+    .contact-sec {
+        padding: 1rem;
+    }
+    .gall-pics img{
+        max-width: 40%;
+        height: 10rem;
+    }
+    a.news-item {
+        width: 85%;
+        height: 15rem;
+        margin: 1rem 0;
+    }
+    
+    .nav-btn4{
+        display: initial;
+    }
+
 }

@@ -9,19 +9,24 @@
     <link rel="stylesheet" href="css/brands.css">
     <link rel="stylesheet" href="css/solid.css">
     <link rel="stylesheet" href="styles.css">
-    <title>denizfeneri | home</title>
+    <title>denizfeneri | activities</title>
 </head>
 
 <body class="">
-    <section class="hero gall acts">
+    <section class="hero gall acts d-flex justify-content-between flex-column ">
         <nav class="px-3">
             <div class="d-flex justify-content-between align-items-center ">
-                <div class="d-flex menu">
+                <div class="bars d-lg-none ">
+                    <button>
+                        <i class="fa-solid fa-bars"></i>
+                    </button>
+                </div>
+                <div class="d-none d-lg-flex  menu">
                     <a href="index.html" class="nav-link">Home</a>
                     <a href="about.html" class="nav-link">About</a>
                     <a href="contact.html" class="nav-link">Contact</a>
-                    <a href="gallery.html" class="nav-link">Gallery</a>
-                    <a href="activities.html" class="nav-link active">Activities</a>
+                    <a href="gallery.html" class="nav-link ">Gallery</a>
+                    <a href="activities.html" class="nav-link active ">Activities</a>
                 </div>
                 <div>
                     <a href="" class="nav-link ">
@@ -29,19 +34,141 @@
                     </a>
                 </div>
                 <div class="">
-                    <button class="search btn text-white border rounded-circle btn-sm border-2 me-4">
+                    <button type="button" class="search btn text-white 
+                    border rounded-circle btn-sm border-2" data-bs-toggle="modal"
+                        data-bs-target="#staticBackdrop">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
-                    <button class="btn bg-danger text-white me-1">
+                    <!-- Modal -->
+                    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form action=""
+                                        class=" bg-white border border-secondary     d-flex align-items-center rounded-5 p-0">
+                                        <input type="search" name="" id=""
+                                            class="py-2 border-0  form-control rounded-5 ">
+                                        <button type="submit"
+                                            class="btn bg-primary  rounded-5 px-2 py-2 ">search</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="btn bg-danger nav-btn2 text-white me-1" data-bs-toggle="modal"
+                        data-bs-target="#login">
                         <i class="fa-solid fa-user"></i>
                         My account
                     </button>
-                    <a href="" class="btn bg-primary  text-white me-1">Account Numbers</a>
-                    <a href="" class="btn bg-danger text-white">DONATION BASKET</a>
+                    <!-- Modal -->
+                    <div class="modal fade login-modal" id="login" data-bs-backdrop="static" data-bs-keyboard="false"
+                        tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg ">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="text-dark ">
+                                        <b>Login</b>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body py-3">
+                                    <div class="d-flex text-dark flex-column align-items-center ">
+                                        <div
+                                            class="col-3 d-flex justify-content-center align-items-center ">
+                                            <i class="fa-solid fa-user border rounded-circle p-5"></i>
+                                        </div>
+                                        <div class="col-md-7 px-2">
+                                            <form action="">
+                                                <div class="py-1">
+                                                    <label for="" class="form-label">Phone Number</label>
+                                                    <input type="text" class="form-control py-3">
+                                                </div>
+                                                <div class="py-1">
+                                                    <label for="" class="form-label">Password</label>
+                                                    <input type="text" class="form-control py-3">
+                                                </div>
+                                                <div class="d-flex justify-content-between ">
+                                                    <button type="submit"
+                                                        class="btn bg-primary mt-2 text-white ">Login</button>
+                                                    <button type="button" class="btn text-primary  
+                                                        border-0 btn-sm border-2 me-4" data-bs-toggle="modal"
+                                                        data-bs-target="#signin">
+                                                        You don't have an account? SignUp.
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal fade login-modal signin-model" id="signin" data-bs-backdrop="static"
+                        data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg ">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <div class="text-dark ">
+                                        <b>SignUp</b>
+                                    </div>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body py-3">
+                                    <div class="d-flex text-dark align-items-center  ">
+                                        <div
+                                            class="col-3 my-3 d-flex justify-content-center align-items-center ">
+                                            <i class="fa-solid fa-user border rounded-circle p-5"></i>
+                                        </div>
+                                        <div class="col-md-7 px-2">
+                                            <form action="">
+                                                <div class="py-1">
+                                                    <label for="" class="form-label">Phone Number</label>
+                                                    <input type="text" class="form-control py-3">
+                                                </div>
+                                                <div class="py-1">
+                                                    <label for="" class="form-label">Password</label>
+                                                    <input type="text" class="form-control py-3">
+                                                </div>
+                                                <div class="py-1">
+                                                    <label for="" class="form-label">Comfirm Password</label>
+                                                    <input type="text" class="form-control py-3">
+                                                </div>
+                                                <div class="d-flex justify-content-between ">
+                                                    <button type="submit"
+                                                        class="btn bg-primary mt-2 text-white ">SignUp</button>
+                                                    <button type="button" class="btn text-primary  
+                                                        border-0 btn-sm border-2 me-4" data-bs-toggle="modal"
+                                                        data-bs-target="#login">
+                                                        Already have an account? Login.
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn bg-primary  text-white me-1 nav-btn2">Account Numbers</button>
+                    <a href="" class="btn bg-danger text-white nav-btn3">DONATION BASKET</a>
+                    <a href="" class="btn nav-btn4">
+                        <i class="border p-2 rounded-circle  fa-solid fa-hands-holding-child text-light "></i>
+                    </a>
                 </div>
             </div>
         </nav>
         <div class="her d-flex flex-column justify-content-center">
+            <div class="col-md-8 mx-auto px-1">
+                <h1 class="text-center ">Bringing Love and Hope</h1>
+                <h5 class="text-center ">Changing Lives Through Compassion and Care.</h5>
+            </div>
             <div class="col-8 mx-auto d-flex justify-content-center  ">
                 <a href="" class="btn btn-lg px-4  bg-primary text-white  rounded-5 mt-3">
                     <b>Donate</b>
@@ -53,12 +180,12 @@
         <div>
             <h3 class="text-center ">Our Activities</h3>
         </div>
-        <div class="col-lg-8 mx-auto">
-            <div class="act-item d-flex ">
-                <div class="col-6">
+        <div class="col-md-8 px-3 px-lg-0 col-lg-9 mx-auto">
+            <div class="act-item d-flex flex-column flex-lg-row ">
+                <div class=" ">
                     <img src="images/proj1.jpg" alt="">
                 </div>
-                <div class="col-6 px-lg-4">
+                <div class="col-lg-6 px-lg-4">
                     <h4>Feeding the hungry</h4>
                     <p>Lorem ipsum dolor sit amet 
                         consectetur, adipisicing elit.
@@ -76,33 +203,11 @@
                                  quisquam aut corrupti.</p>
                 </div>
             </div>
-            <div class="act-item d-flex ">
-                <div class="col-6">
+            <div class="act-item d-flex flex-column flex-lg-row ">
+                <div class=" ">
                     <img src="images/proj2.jpg" alt="">
                 </div>
-                <div class="col-6 px-lg-4">
-                    <h4>Accomodating those without shelter</h4>
-                    <p>Lorem ipsum dolor sit amet 
-                        consectetur, adipisicing elit.
-                         Atque, laborum. Laudantium quos
-                          dolorum obcaecati deserunt eaque
-                           tenetur reiciendis, autem
-                            culpa repudiandae consequuntur
-                             quod ipsum omnis aliquid 
-                             doloribus? Nemo veniam 
-                             corporis autem maiores
-                              explicabo ex quae deserunt
-                               dignissimos eos eum! Enim 
-                               mollitia, placeat nulla non
-                                molestias facere dolorum
-                                 quisquam aut corrupti.</p>
-                </div>
-            </div>
-            <div class="act-item d-flex ">
-                <div class="col-6">
-                    <img src="images/proj1.jpg" alt="">
-                </div>
-                <div class="col-6 px-lg-4">
+                <div class="col-lg-6 px-lg-4">
                     <h4>Feeding the hungry</h4>
                     <p>Lorem ipsum dolor sit amet 
                         consectetur, adipisicing elit.
@@ -120,12 +225,34 @@
                                  quisquam aut corrupti.</p>
                 </div>
             </div>
-            <div class="act-item d-flex ">
-                <div class="col-6">
+            <div class="act-item d-flex flex-column flex-lg-row ">
+                <div class=" ">
                     <img src="images/proj3.jpg" alt="">
                 </div>
-                <div class="col-6 px-lg-4">
-                    <h4>Renovation</h4>
+                <div class="col-lg-6 px-lg-4">
+                    <h4>Feeding the hungry</h4>
+                    <p>Lorem ipsum dolor sit amet 
+                        consectetur, adipisicing elit.
+                         Atque, laborum. Laudantium quos
+                          dolorum obcaecati deserunt eaque
+                           tenetur reiciendis, autem
+                            culpa repudiandae consequuntur
+                             quod ipsum omnis aliquid 
+                             doloribus? Nemo veniam 
+                             corporis autem maiores
+                              explicabo ex quae deserunt
+                               dignissimos eos eum! Enim 
+                               mollitia, placeat nulla non
+                                molestias facere dolorum
+                                 quisquam aut corrupti.</p>
+                </div>
+            </div>
+            <div class="act-item d-flex flex-column flex-lg-row ">
+                <div class=" ">
+                    <img src="images/proj4.jpg" alt="">
+                </div>
+                <div class="col-lg-6 px-lg-4">
+                    <h4>Feeding the hungry</h4>
                     <p>Lorem ipsum dolor sit amet 
                         consectetur, adipisicing elit.
                          Atque, laborum. Laudantium quos
@@ -145,15 +272,15 @@
         </div>
     </section>
     <section class="contact-form">
-        <div class="col-8 mx-auto d-flex ">
-            <div class="col-6 d-flex  justify-content-center flex-column ">
+        <div class="px-3 px-md-0 col-md-8 mx-auto d-flex justify-content-md-between ">
+            <div class="text-cont d-flex  justify-content-center flex-column ">
                 <h3>Contact Us</h3>
                 <h6>Get in touch with us</h6>
                 <div>
                     <div>
                         <a href="">info@fulllove.org</a>
                     </div>
-                    <div class="d-flex justify-content-between col-6 pt-3">
+                    <div class="d-flex justify-content-between col-md-6 pt-3 pe-md-3 ">
                         <a href="" class="nav-link ">
                             <i class="fa-brands fa-facebook"></i>
                         </a>
@@ -169,13 +296,13 @@
                     </div>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="">
                 <img src="images/news1.jpg" alt="">
             </div>
         </div>
     </section>
     <section class="contact-sec">
-        <div class="col-5 mx-auto ">
+        <div class="col-md-8 col-lg-5 mx-auto ">
             <form action="">
                 <div>
                     <label for="" class="form-label ">Your Name</label>
@@ -201,9 +328,9 @@
         <div>
             <h3 class="text-center ">News From Us</h3>
         </div>
-        <div class="news-container col-8 mx-auto  d-flex justify-content-between ">
-            <a href="" class="news-item nav-link ">
-                <img src="images/news1.jpg" alt="">
+        <div class="news-container px-3 px-md-0  col-lg-9 mx-auto  d-flex justify-content-center justify-content-md-between flex-wrap flex-lg-nowrap ">
+            <a href="" class="news-item nav-link " style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/news1.jpg');">
+                <!-- <img src="images/news1.jpg" alt=""> -->
                 <div>
                     <h6>Lorem, ipsum dolor
                         sit amet consectetur
@@ -215,8 +342,8 @@
                         voluptate accusantium.</p>
                 </div>
             </a>
-            <a href="" class="news-item nav-link ">
-                <img src="images/news2.jpg" alt="">
+            <a href="" class="news-item nav-link " style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/news2.jpg');">
+                <!-- <img src="images/news2.jpg" alt=""> -->
                 <div>
                     <h6>Lorem, ipsum dolor
                         sit amet consectetur
@@ -228,8 +355,21 @@
                         voluptate accusantium.</p>
                 </div>
             </a>
-            <a href="" class="news-item nav-link ">
-                <img src="images/news3.jpg" alt="">
+            <a href="" class="news-item nav-link "  style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/news3.jpg');">
+                <!-- <img src="images/news3.jpg" alt=""> -->
+                <div>
+                    <h6>Lorem, ipsum dolor
+                        sit amet consectetur
+                        adipisicing elit.</h6>
+                    <p>Lorem, ipsum dolor sit amet
+                        consectetur adipisicing
+                        elit. Illo doloribus
+                        fugit soluta facere rerum
+                        voluptate accusantium.</p>
+                </div>
+            </a>
+            <a href="" class="news-item nav-link " style="background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/news2.jpg');">
+                <!-- <img src="images/news2.jpg" alt=""> -->
                 <div>
                     <h6>Lorem, ipsum dolor
                         sit amet consectetur
@@ -250,7 +390,7 @@
         <div>
             <h5 class="text-center ">Vounteer!</h5>
         </div>
-        <div class="col-10 mx-auto  d-flex justify-content-between ">
+        <div class="col-md-10 mx-auto  d-flex justify-content-between ">
             <div class="col-8 vol-1 d-flex flex-column justify-content-center px-3 text-white ">
                 <h6>You can support our effort to "beautify our world by increasing good deeds" by joining Deniz
                     Feneri's large volunteer family</h6>
@@ -263,7 +403,7 @@
             </div>
         </div>
     </section>
-    <section class="well col-8 mx-auto  d-flex justify-content-between ">
+    <section class="well col-md-10 col-lg-9 mx-auto  d-flex justify-content-between ">
         <div class="well-left d-flex justify-content-center flex-column ">
             <h6>We are opening 1000 water wells <span class="text-danger">in africa to keep alive the name of our
                     heroes</span> who were martyred for our country.</h6>
@@ -276,15 +416,15 @@
 
     </section>
     <section class="newsletter">
-        <div>
+        <div class="col-md-11 col-lg-9 mx-auto ">
             <h6 class="text-center ">Don't miss our updates about the projects.</h6>
         </div>
-        <div class="d-flex justify-content-center ">
-            <form action="" class="d-flex mx-auto justify-content-between col-lg-6">
-                <div>
+        <div class="d-flex justify-content-center px-0 px-md-3">
+            <form action="" class="d-flex flex-column flex-md-row  mx-auto justify-content-between">
+                <div class="pe-0 mb-4 mb-md-0   pe-md-5 input-container">
                     <input type="text" placeholder="Enter your e-mail address..." class="form-control" name="" id="">
                 </div>
-                <button type="submit" class="btn btn-outline-dark ">Subscribe to our News Letter</button>
+                <button type="submit" class="btn btn-outline-dark ps-5 ">Subscribe to our News Letter</button>
             </form>
         </div>
     </section>
@@ -294,18 +434,18 @@
                 <div class="logo">
                     <img src="images/logo.png" alt="">
                 </div>
-                <div class="d-flex justify-content-between mt-5">
+                <div class="d-flex justify-content-between mt-5 pe-5 pe-lg-0 ">
                     <a href="" class="nav-link mx-1">
-                        <i class="fa-brands fa-x-twitter p-3"></i>
+                        <i class="fa-brands fa-x-twitter p-2 p-lg-3"></i>
                     </a>
                     <a href="" class="nav-link mx-1">
-                        <i class="fa-brands fa-whatsapp p-3"></i>
+                        <i class="fa-brands fa-whatsapp p-2 p-lg-3"></i>
                     </a>
                     <a href="" class="nav-link mx-1">
-                        <i class="fa-brands fa-facebook p-3"></i>
+                        <i class="fa-brands fa-facebook p-2 p-lg-3"></i>
                     </a>
                     <a href="" class="nav-link mx-1">
-                        <i class="fa-brands fa-instagram p-3"></i>
+                        <i class="fa-brands fa-instagram p-2 p-lg-3"></i>
                     </a>
                 </div>
             </div>
@@ -314,7 +454,7 @@
                 <ul>
                     <li class="">
                         <a href="" class="nav-link">About us</a>
-                    </li>
+                     </li>
                     <li class="">
                         <a href="" class="nav-link">Board of Directors</a>
                     </li>
