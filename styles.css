@@ -484,12 +484,18 @@ footer i{
 
 }
 
-@media screen and (max-width:658px) {
+@media screen and (max-width: 658px) {
     nav .nav-btn2{
         display: none;
     }
+    a.news-item {
+        width: 68%;
+        height: 15rem;
+        margin: 1rem 0.2rem;
+    }
     
 }
+
 
 @media screen and (max-width:425px) {
     
@@ -558,11 +564,7 @@ footer i{
         font-size: 2.4rem;
         padding: 0;
     }
-    a.news-item {
-        width: 68%;
-        height: 15rem;
-        margin: 1rem 0.2rem;
-    }
+    
     a.news-item div h6{
         color: white;
         font-size: 1rem;
