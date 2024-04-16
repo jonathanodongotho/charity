@@ -352,6 +352,7 @@ footer i{
 
 @media screen and (max-width: 991px) {
     .nav-medium{
+        transition: all 0.45s ease-in-out;
         display: initial;
         background: white;
         position: absolute;
@@ -615,6 +616,7 @@ footer i{
         display: none;
     }
     .nav-small{
+        transition: all 0.45s ease-in-out;
         display: initial;
         background: white;
         position: absolute;
@@ -622,6 +624,9 @@ footer i{
         width: 100%;
         padding: 2rem 0;
         translate: -100vw 0;
+    }
+    .nav-small.active{
+        translate: 0;
     }
     .nav-small.active{
         translate: 0;
