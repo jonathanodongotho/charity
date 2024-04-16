@@ -63,7 +63,7 @@ nav .search:hover{
 .hero{
     height: 100vh;
     margin-top: ;
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)), url('images/image2.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('images/image2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -294,7 +294,7 @@ a.news-item div p{
     padding: 4rem 0;
 }
 footer{
-    background: linear-gradient(rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0.95)), url('images/image2.jpg');;
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url('images/image2.jpg');;
     color: rgb(194, 194, 194);
 }
 footer h5{
